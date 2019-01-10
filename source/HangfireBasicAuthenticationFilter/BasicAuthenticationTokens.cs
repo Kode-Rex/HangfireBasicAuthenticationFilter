@@ -24,7 +24,7 @@
 
         private bool Valid_Token_Value(string token)
         {
-            return !string.IsNullOrWhiteSpace(token);
+            return string.IsNullOrWhiteSpace(token);
         }
 
         private bool Contains_Two_Tokens()
