@@ -7,6 +7,6 @@ Just replace my_username and my_password with your desired values.
 ```
 app.UseHangfireDashboard("/jobs", new DashboardOptions
 {
-    Authorization = new[] { new HangfireCustomBasicAuthorizeFilter{User="my_username",Pass="my_password" }
+    Authorization = new[] { new HangfireCustomBasicAuthenticationFilter{User="my_username",Pass="my_password" }
 });
 ```
