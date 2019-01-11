@@ -1,4 +1,5 @@
 ﻿using FluentAssertions;
+using Microsoft.Extensions.Logging;
 using NUnit.Framework;
 
 namespace HangfireBasicAuthenticationFilter.Tests
@@ -11,7 +12,6 @@ namespace HangfireBasicAuthenticationFilter.Tests
         {
             //---------------Arrange-------------------
             var tokens = new[] {"user", "pass"};
-
             var sut = new BasicAuthenticationTokens(tokens);
             //---------------Act----------------------
             var actual = sut.Are_Invalid();
