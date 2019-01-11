@@ -3,19 +3,25 @@ using System.Net.Http.Headers;
 using Hangfire.Dashboard;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Logging.Abstractions;
 using Microsoft.Extensions.Primitives;
 
 namespace HangfireBasicAuthenticationFilter
 {
     public class HangfireCustomBasicAuthenticationFilter : IDashboardAuthorizationFilter
     {
-        private readonly ILogger<HangfireCustomBasicAuthenticationFilter> _logger;
+        private readonly ILogger _logger;
         public string User { get; set; }
         public string Pass { get; set; }
 
         private const string _AuthenticationScheme = "Basic";
 
-        public HangfireCustomBasicAuthenticationFilter(ILogger<HangfireCustomBasicAuthenticationFilter> logger)
+        public HangfireCustomBasicAuthenticationFilter() : this(
+            new NullLogger<HangfireCustomBasicAuthenticationFilter>())
+        {
+        }
+
+        public HangfireCustomBasicAuthenticationFilter(ILogger logger)
         {
             _logger = logger;
         }
