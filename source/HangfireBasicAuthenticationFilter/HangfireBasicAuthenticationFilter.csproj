@@ -1,24 +1,29 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <TargetFramework>netcoreapp2.2</TargetFramework>
     <PackageId>Hangfire.Dashboard.Basic.Authentication</PackageId>
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Description>A re-usable Hangfire Basic Authentication filter. Just import and configure.</Description>
     <PackageProjectUrl>https://github.com/StoneAgeTechnologies/HangfireBasicAuthenticationFilter.git</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.0.4</Version>
-    <PackageReleaseNotes>Added second constructor to avoid requiring logger to be passed in.</PackageReleaseNotes>
-    <FileVersion>1.0.4.0</FileVersion>
+    <Version>1.1.0</Version>
+    <PackageReleaseNotes>dotnet core 2.2 targets</PackageReleaseNotes>
+    <FileVersion>1.1.0.0</FileVersion>
+    <AssemblyVersion>1.1.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Hangfire.AspNetCore" Version="1.6.21" />
     <PackageReference Include="Hangfire.Core" Version="1.6.21" />
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Update="Microsoft.NETCore.App" Version="2.2.1" />
   </ItemGroup>
 
 </Project>
