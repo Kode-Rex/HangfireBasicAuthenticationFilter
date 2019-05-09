@@ -8,15 +8,15 @@
     <Description>A re-usable Hangfire Basic Authentication filter. Just import and configure.</Description>
     <PackageProjectUrl>https://github.com/StoneAgeTechnologies/HangfireBasicAuthenticationFilter.git</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>1.1.0</Version>
-    <PackageReleaseNotes>dotnet core 2.2 targets</PackageReleaseNotes>
-    <FileVersion>1.1.0.0</FileVersion>
-    <AssemblyVersion>1.1.0.0</AssemblyVersion>
+    <Version>1.0.6</Version>
+    <PackageReleaseNotes>updated hangfire dependiencies</PackageReleaseNotes>
+    <FileVersion>1.0.6.0</FileVersion>
+    <AssemblyVersion>1.0.6.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Hangfire.AspNetCore" Version="1.6.21" />
-    <PackageReference Include="Hangfire.Core" Version="1.6.21" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.2" />
+    <PackageReference Include="Hangfire.Core" Version="1.7.2" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.2.0" />
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.2.0" />
