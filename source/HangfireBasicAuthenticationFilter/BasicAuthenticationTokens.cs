@@ -14,7 +14,7 @@
 
         public bool Are_Invalid()
         {
-            return Contains_Two_Tokens() && Valid_Token_Value(Username) && Valid_Token_Value(Password);
+            return Not_Contains_Two_Tokens() || Invalid_Token_Value(Username) || Invalid_Token_Value(Password);
         }
 
         public bool Credentials_Match(string user, string pass)
@@ -22,14 +22,14 @@
             return Username.Equals(user) && Password.Equals(pass);
         }
 
-        private bool Valid_Token_Value(string token)
+        private bool Invalid_Token_Value(string token)
         {
             return string.IsNullOrWhiteSpace(token);
         }
 
-        private bool Contains_Two_Tokens()
+        private bool Not_Contains_Two_Tokens()
         {
-            return _tokens.Length == 2;
+            return _tokens.Length != 2;
         }
     }
 }
