@@ -1,25 +1,24 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <PackageId>Hangfire.Dashboard.Basic.Authentication</PackageId>
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Description>A re-usable Hangfire Basic Authentication filter. Just import and configure.</Description>
     <PackageProjectUrl>https://github.com/StoneAgeTechnologies/HangfireBasicAuthenticationFilter.git</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>7.0.0</Version>
-    <PackageReleaseNotes>.net 7 update</PackageReleaseNotes>
-    <FileVersion>7.0.0.0</FileVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <Version>6.0.0</Version>
+    <PackageReleaseNotes>.net 6 update</PackageReleaseNotes>
+    <FileVersion>6.0.0.0</FileVersion>
+    <AssemblyVersion>6.0.0.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.34" />
-    <PackageReference Include="Hangfire.Core" Version="1.7.34" />
-    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Primitives" Version="7.0.0" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.1.34" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="6.0.4" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="6.0.1" />
   </ItemGroup>
 
   <ItemGroup>
