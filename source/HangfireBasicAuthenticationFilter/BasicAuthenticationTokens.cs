@@ -14,7 +14,7 @@
 
         public bool Are_Invalid()
         {
-            return Contains_Two_Tokens() && Valid_Token_Value(Username) && Valid_Token_Value(Password);
+            return !Contains_Two_Tokens() || !Valid_Token_Value(Username) || !Valid_Token_Value(Password);
         }
 
         public bool Credentials_Match(string user, string pass)
@@ -24,7 +24,7 @@
 
         private bool Valid_Token_Value(string token)
         {
-            return string.IsNullOrWhiteSpace(token);
+            return !string.IsNullOrWhiteSpace(token);
         }
 
         private bool Contains_Two_Tokens()

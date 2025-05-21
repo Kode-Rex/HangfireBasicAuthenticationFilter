@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,10 +13,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\HangfireBasicAuthenticationFilter\HangfireBasicAuthenticationFilter.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Update="Microsoft.NETCore.App" Version="2.2.4" />
   </ItemGroup>
 
 </Project>
