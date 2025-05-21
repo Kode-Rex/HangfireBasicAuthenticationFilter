@@ -1,34 +1,31 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net7.0</TargetFramework>
+    <TargetFramework>net8.0</TargetFramework>
     <PackageId>Hangfire.Dashboard.Basic.Authentication</PackageId>
     <Authors>Travis Frisinger</Authors>
     <Company>StoneAge Technologies</Company>
     <Description>A re-usable Hangfire Basic Authentication filter. Just import and configure.</Description>
     <PackageProjectUrl>https://github.com/StoneAgeTechnologies/HangfireBasicAuthenticationFilter.git</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <Version>7.0.0</Version>
-    <PackageReleaseNotes>.net 7 update</PackageReleaseNotes>
-    <FileVersion>7.0.0.0</FileVersion>
-    <AssemblyVersion>7.0.0.0</AssemblyVersion>
+    <Version>8.0.0</Version>
+    <PackageReleaseNotes>.net 8 update</PackageReleaseNotes>
+    <FileVersion>8.0.0.0</FileVersion>
+    <AssemblyVersion>8.0.0.0</AssemblyVersion>
     <PublishRepositoryUrl>true</PublishRepositoryUrl>
     <IncludeSymbols>true</IncludeSymbols>
     <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
-
   <ItemGroup>
     <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
   </ItemGroup>
-
   <ItemGroup>
-    <PackageReference Include="Hangfire.AspNetCore" Version="1.7.34" />
-    <PackageReference Include="Hangfire.Core" Version="1.7.34" />
+    <PackageReference Include="Hangfire.AspNetCore" Version="1.8.20" />
+    <PackageReference Include="Hangfire.Core" Version="1.8.20" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
-    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="7.0.0" />
-    <PackageReference Include="Microsoft.Extensions.Primitives" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Primitives" Version="8.0.0" />
   </ItemGroup>
-
   <ItemGroup>
     <PackageReference Update="Microsoft.NETCore.App" Version="2.1.8" />
   </ItemGroup>
