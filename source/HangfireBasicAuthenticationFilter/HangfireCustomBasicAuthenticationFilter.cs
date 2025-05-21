@@ -90,7 +90,6 @@ namespace HangfireBasicAuthenticationFilter
         {
             httpContext.Response.StatusCode = 401;
             httpContext.Response.Headers.Append("WWW-Authenticate", "Basic realm=\"Hangfire Dashboard\"");
-            httpContext.Response.WriteAsync("Authentication is required.");
         }
     }
 }
